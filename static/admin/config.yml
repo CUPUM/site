@@ -1,0 +1,4 @@
+backend:
+  name: github
+  repo: CUPUM/site
+  branch: main

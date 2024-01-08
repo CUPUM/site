@@ -12,7 +12,7 @@ const config = {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 		},
 		alias: {
-			$messages: './src/lib/i18n/generated'
+			$translations: './src/lib/i18n/generated'
 		}
 	}
 };
