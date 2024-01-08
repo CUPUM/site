@@ -1,0 +1,25 @@
+{
+	"workbench.editor.labelFormat": "short",
+	"editor.formatOnPaste": false,
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit",
+		"source.fixAll": "explicit"
+	},
+	"files.associations": {
+		"*.svx": "markdown",
+		"*.mdx": "markdown",
+		"*.json": "jsonc"
+	},
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.preferences.quoteStyle": "single",
+	"svelte.enable-ts-plugin": true,
+	"svelte.plugin.css.globals": "src/**/*.css",
+	"svelte.plugin.svelte.compilerWarnings": {
+		"a11y-missing-attribute": "ignore"
+	}
+}
