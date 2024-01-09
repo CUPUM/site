@@ -5,9 +5,10 @@ import { link } from './link';
 
 /**
  * Handle hook for:
- * - setting SSR lang
- * - transforming html lang attribute placeholder
- * - rewriting unlocalized SSR redirects lang segment in location
+ *
+ * - Setting SSR lang.
+ * - Transforming html lang attribute placeholder.
+ * - Rewriting unlocalized SSR redirects lang segment in location.
  */
 const handle = (async ({ event, resolve }) => {
 	event.locals.lang = getEventLang(event);
@@ -15,7 +16,7 @@ const handle = (async ({ event, resolve }) => {
 	const response = await resolve(event, {
 		transformPageChunk(input) {
 			return input.html.replace('%lang%', event.locals.lang);
-		}
+		},
 	});
 	if (!isRedirect(response)) {
 		return response;
