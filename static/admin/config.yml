@@ -24,3 +24,37 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime', i18n: true }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image', i18n: true }
       - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
+  - name: members
+    label: Members
+    folder: 'members'
+    create: true
+    i18n: true
+    fields:
+      - { label: 'First name', name: 'first_name', widget: 'string', i18n: false }
+      - {
+          label: 'Middle name',
+          name: 'middle_name',
+          widget: 'string',
+          i18n: false,
+          required: false,
+        }
+      - { label: 'Last name', name: 'first_name', widget: 'string', i18n: false }
+  - name: posts
+    label: Posts
+    folder: posts
+    create: true
+    i18n: true
+    fields:
+      - label: Title
+        name: title
+        widget: 'string'
+        i18n: true
+      - label: Events
+        name: events
+        widget: list
+        fields:
+          - label: event
+            widget: relation
+  - name: equipment
+    label: Equipment
+    folder: equipment
